@@ -19,7 +19,7 @@ class git_three {
 
         int count = scan.nextInt(); // 몇 번 반복할 건지 입력
         int [] result = new int[count];
-~
+
 
         //입력된 숫자만큼 더해줌
         for (int i=0; i<count; i++){
@@ -35,7 +35,6 @@ class git_three {
             System.out.println(result[i]);
 
         }
-
 
 
     }
