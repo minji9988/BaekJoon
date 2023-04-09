@@ -19,9 +19,10 @@ class sum_N {
         for (int i=1; i<=n; i++) {
             sum += i;
 
+            System.out.println(sum);
+
         }
 
-        System.out.println(sum);
 
 
 

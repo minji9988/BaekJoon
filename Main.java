@@ -3,30 +3,26 @@ import java.util.Scanner;
 public
 class Main {
 
-    public static
-    void main ( String[] args ) {
+    public static void main ( String[] args ) {
+
+        // n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
 
         Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt(); // 사용자가 입력한 N 값 저장
+        scan.close();
 
-        int count = scan.nextInt(); // 몇 번 덧셈연산을 해줄 건지 입력
-        int [] result = new int[count]; // 더해진 숫자들이 저장될 배열 선언
+        int sum = 0;
 
-
-        //입력된 숫자들을 더해 줌
-        for (int i=0; i<count; i++){
-            int A = scan.nextInt();
-            int B = scan.nextInt();
-
-            result[i] = A + B; //입력된 숫자들은 result란 배열에 저장됨
-
+        //입력된 숫자만큼 더해줌
+        for (int i=1; i<=n; i++) {
+            sum += i;
+            System.out.println(sum);
         }
 
-        // 더해준 숫자들을 출력
-        for (int i=0; i<count; i++){
-            System.out.println(result[i]);
 
-        }
 
 
     }
+
+
 }
