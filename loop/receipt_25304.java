@@ -24,7 +24,6 @@ public class receipt_25304 {
 
         }
 
-
         scan.close();
 
 
