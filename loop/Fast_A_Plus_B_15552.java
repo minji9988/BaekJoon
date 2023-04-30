@@ -35,7 +35,7 @@ public class Fast_A_Plus_B_15552 {
                 // 2 이렇게 엔터 단위로 입력받으려는 것이 아니다. 그래서 공백단위로 입력받는 StringTokenizer를 사용한다.
 
                 bw.write((Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()))+ "\n");
-                // StringTokenizer의 nextToken() 함수를 쓰면 readLine()을 통해 입력 받은 값을 공백 단위로 구분하여 순서대로 호출할 수 있다.
+                // nextToken은 문자열을 반환해서 Inter.parseInt로 int로 변
             }
             br.close();
 

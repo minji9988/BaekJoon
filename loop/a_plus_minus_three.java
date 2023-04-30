@@ -6,7 +6,11 @@
 
 package loop;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public
 class a_plus_minus_three {
@@ -16,11 +20,11 @@ class a_plus_minus_three {
         Scanner scan = new Scanner(System.in);
 
         int count = scan.nextInt(); // 몇 번 반복할 건지 입력
-        int [] result = new int[count];
+        int[] result = new int[count];
 
 
         //입력된 숫자만큼 더해줌
-        for (int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             int A = scan.nextInt();
             int B = scan.nextInt();
 
@@ -29,13 +33,31 @@ class a_plus_minus_three {
         }
 
         // 입력된 숫자만큼 출력
-        for (int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             System.out.println(result[i]);
 
         }
 
 
-
     }
-
 }
+//    public class Main {
+//        public static void main(String args[]) throws IOException {
+//
+//            BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+//
+//            int a = Integer.parseInt(br.readLine());
+//
+//            StringTokenizer st;
+//            for (int i = 1; i <= a; i++) {
+//                st = new StringTokenizer(br.readLine()," ");
+//                System.out.println("Case #" + i + ": "
+//                        +(Integer.parseInt(st.nextToken())
+//                        +Integer.parseInt(st.nextToken())));
+//            }
+//            br.close();
+//        }
+//
+//    }
+//
+//}
