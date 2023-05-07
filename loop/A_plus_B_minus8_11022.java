@@ -3,6 +3,7 @@ package loop;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class A_plus_B_minus8_11022 {
@@ -11,11 +12,15 @@ public class A_plus_B_minus8_11022 {
 
 
         //BufferReader를 사용해서 A+B 만들기
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); //Scanner와 유사
+//      Scanner scan = new Scanner(System.in);
+
+
+        int A;
+        int B;
 
         int count = Integer.parseInt(br.readLine());
-        // readLine은 입력을 받을 때 사용하는 메서드다. next 메서드 느낌?
+        // readLine은 입력을 받을 때 사용하는 메서드다.
         // br.readLine()이 scan.nextInt 느낌. ex) int n = scan.nextInt();
         //  readLine 메서드로 입력받은 건 String type으로 고정되서 다른 타입으로 입력받으려 할 땐
         // 형 변환이 필요하다. 여기선 정수형으로 받아줘야 해서 Integer.parseInt를 작성해서 String을 int로 바꿔줬다.
@@ -37,7 +42,10 @@ public class A_plus_B_minus8_11022 {
             // num에 1 2 3 이 저장된다. 띄어쓰기 단위로 데이터를 가공하니까.
             // 그래서 굳이 int A = in.nextInt(), int B= in.nextInt(), int C= in.nextInt() 이렇게 하나하나 만들 필요가 없다.
 
-            System.out.println("Case #" + i + ": " +(Integer.parseInt(num.nextToken()) + Integer.parseInt(num.nextToken())));
+            A = Integer.parseInt(num.nextToken());
+            B = Integer.parseInt(num.nextToken());
+
+            System.out.println("Case #" + i + ": " + A +" + "+ B + " = "+ (A+B));
 //            num.nextToken() 은 문자열을 반환하니 Integer.parseInt()로 int 형으로 변환시켜준다.
 
         }
