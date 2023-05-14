@@ -42,7 +42,8 @@ public class A_plus_B_minus8_11022 {
             // num에 1 2 3 이 저장된다. 띄어쓰기 단위로 데이터를 가공하니까.
             // 그래서 굳이 int A = in.nextInt(), int B= in.nextInt(), int C= in.nextInt() 이렇게 하나하나 만들 필요가 없다.
 
-            A = Integer.parseInt(num.nextToken());
+            A = Integer.parseInt(num.nextToken()); //nextToken은 구분된 문자 출력
+            // 예) 2 3이란 덩어리를 넣었다면 개별적으로 2, 3을 구분해서 반환하는 것이다.
             B = Integer.parseInt(num.nextToken());
 
             System.out.println("Case #" + i + ": " + A +" + "+ B + " = "+ (A+B));
@@ -54,3 +55,5 @@ public class A_plus_B_minus8_11022 {
 
     }
 }
+
+
