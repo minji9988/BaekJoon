@@ -8,7 +8,6 @@ public class PrintStarts_2439 {
     public static
     void main ( String[] args ) throws IOException {
 
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); //Scanner와 유사
 
         int count = Integer.parseInt(br.readLine());
